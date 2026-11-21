@@ -426,3 +426,10 @@ b { color: #fff; font-weight: 600; }
   .chat-panel { position: fixed; inset: auto 8px 88px 8px; width: auto; height: min(560px, calc(100svh - 110px)); }
   .chat-form input { font-size: 16px; } /* stops iOS zoom-on-focus */
 }
+
+/* chat: warning / terminated states */
+.msg.warn { background: rgba(251,191,36,.08); border-color: rgba(251,191,36,.45); }
+.msg.danger { background: rgba(248,113,113,.09); border-color: rgba(248,113,113,.5); }
+.chat.ended .chat-form { opacity: .55; }
+.chat.ended .chat-sub .dot { background: #f87171; box-shadow: 0 0 8px #f87171; }
+.chat-form input:disabled { cursor: not-allowed; }
